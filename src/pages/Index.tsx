@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -69,13 +69,13 @@ const Index = () => {
                 </button>
                 {activeDropdown === 'ambientes' && (
                   <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                    <a href="#pre-incubadoras" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Pré-incubadoras e Incubadoras</a>
-                    <a href="#nits" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">NITs</a>
-                    <a href="#parque-labs" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Parque Labs</a>
-                    <a href="#centro-inovacao" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Centro de Inovação</a>
-                    <a href="#parque-tecnologico" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Parque Tecnológico</a>
-                    <a href="#venture-builder" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Corporate Venture Builder</a>
-                    <a href="#embrapii" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Embrapii</a>
+                    <Link to="/pre-incubadoras" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Pré-incubadoras e Incubadoras</Link>
+                    <Link to="/nits" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">NITs</Link>
+                    <Link to="/parque-labs" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Parque Labs</Link>
+                    <Link to="/centro-inovacao" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Centro de Inovação</Link>
+                    <Link to="/parque-tecnologico" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Parque Tecnológico</Link>
+                    <Link to="/venture-builder" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Corporate Venture Builder</Link>
+                    <Link to="/embrapii" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Embrapii</Link>
                   </div>
                 )}
               </div>
