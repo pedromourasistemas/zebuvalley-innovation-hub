@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -183,16 +184,24 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Eventos */}
-            <div id="eventos" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+            <div id="eventos" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 md:col-span-2 lg:col-span-3">
               <Calendar className="h-8 w-8 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Eventos</h3>
               <p className="text-gray-600 mb-4">
                 Acompanhe nossa agenda de eventos e atividades do ecossistema.
               </p>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <p className="text-sm text-gray-600">
-                  Para visualizar nossa agenda completa, acesse o Google Calendar do ZebuValley.
+              <div className="bg-gray-50 p-4 rounded-lg mb-4">
+                <p className="text-sm text-gray-600 mb-3">
+                  Confira abaixo nossa agenda completa de eventos:
                 </p>
+                <div className="w-full h-96 border border-gray-200 rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://calendar.google.com/calendar/embed?src=falecomzebuvalley%40gmail.com&ctz=America%2FSao_Paulo&mode=AGENDA"
+                    className="w-full h-full"
+                    frameBorder="0"
+                    scrolling="no"
+                  ></iframe>
+                </div>
               </div>
             </div>
 
