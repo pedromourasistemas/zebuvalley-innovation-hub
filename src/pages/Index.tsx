@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -91,18 +90,18 @@ const Index = () => {
                 </button>
                 {activeDropdown === 'zebuvalley' && (
                   <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                    <a href="#empresas" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Empresas</a>
-                    <a href="#academia" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Academia</a>
-                    <a href="#sociedade" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Sociedade Organizada</a>
-                    <a href="#governo" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Governo</a>
-                    <a href="#mecanismos" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Mecanismos de Inovação</a>
+                    <Link to="/empresas" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Empresas</Link>
+                    <Link to="/academia" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Academia</Link>
+                    <Link to="/sociedade-organizada" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Sociedade Organizada</Link>
+                    <Link to="/governo" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Governo</Link>
+                    <Link to="/mecanismos-inovacao" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Mecanismos de Inovação</Link>
                   </div>
                 )}
               </div>
 
-              <a href="#inovacao" className="text-gray-700 hover:text-orange-600 transition-colors">
+              <Link to="/inovacao" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Inovação
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -12,6 +12,12 @@ import CentroInovacao from "./pages/CentroInovacao";
 import ParqueTecnologico from "./pages/ParqueTecnologico";
 import VentureBuilder from "./pages/VentureBuilder";
 import Embrapii from "./pages/Embrapii";
+import Empresas from "./pages/Empresas";
+import Academia from "./pages/Academia";
+import SociedadeOrganizada from "./pages/SociedadeOrganizada";
+import Governo from "./pages/Governo";
+import MecanismosInovacao from "./pages/MecanismosInovacao";
+import Inovacao from "./pages/Inovacao";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +37,12 @@ const App = () => (
           <Route path="/parque-tecnologico" element={<ParqueTecnologico />} />
           <Route path="/venture-builder" element={<VentureBuilder />} />
           <Route path="/embrapii" element={<Embrapii />} />
+          <Route path="/empresas" element={<Empresas />} />
+          <Route path="/academia" element={<Academia />} />
+          <Route path="/sociedade-organizada" element={<SociedadeOrganizada />} />
+          <Route path="/governo" element={<Governo />} />
+          <Route path="/mecanismos-inovacao" element={<MecanismosInovacao />} />
+          <Route path="/inovacao" element={<Inovacao />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
