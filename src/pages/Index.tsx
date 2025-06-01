@@ -32,7 +32,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-orange-600">ZebuValley</span>
+              <span className="text-2xl font-bold text-orange-600">
+                <img src="/images/logo_zebuvalley.png" style={{ width: '100px', height: 'auto' }}/>
+              </span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -111,7 +113,7 @@ const Index = () => {
       <section 
         className="py-20 bg-gradient-to-br from-orange-50 to-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.8), rgba(255, 255, 255, 0.8)), url('/images/startup.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -194,12 +196,13 @@ const Index = () => {
                   Confira abaixo nossa agenda completa de eventos:
                 </p>
                 <div className="w-full h-96 border border-gray-200 rounded-lg overflow-hidden">
-                  <iframe
-                    src="https://calendar.google.com/calendar/embed?src=falecomzebuvalley%40gmail.com&ctz=America%2FSao_Paulo&mode=AGENDA"
-                    className="w-full h-full"
-                    frameBorder="0"
-                    scrolling="no"
-                  ></iframe>
+                    <iframe
+                      src="https://calendar.google.com/calendar/embed?src=falecomzebuvalley%40gmail.com&ctz=America%2FSao_Paulo"
+                      style={{ border: 0, width: '100%', height: '600px' }}
+                      frameBorder="0"
+                      scrolling="no"
+                      title="Agenda ZebuValley"
+                    />
                 </div>
               </div>
             </div>
