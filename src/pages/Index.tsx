@@ -32,18 +32,18 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-blue-600">ZebuValley</span>
+              <span className="text-2xl font-bold text-orange-600">ZebuValley</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#quem-somos" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <a href="#quem-somos" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Quem somos
               </a>
               
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('oportunidades')}
-                  className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+                  className="flex items-center text-gray-700 hover:text-orange-600 transition-colors"
                 >
                   Oportunidades
                   <ChevronDown className="ml-1 h-4 w-4" />
@@ -62,7 +62,7 @@ const Index = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('ambientes')}
-                  className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+                  className="flex items-center text-gray-700 hover:text-orange-600 transition-colors"
                 >
                   Ambientes de Inovação
                   <ChevronDown className="ml-1 h-4 w-4" />
@@ -83,7 +83,7 @@ const Index = () => {
               <div className="relative">
                 <button
                   onClick={() => toggleDropdown('zebuvalley')}
-                  className="flex items-center text-gray-700 hover:text-blue-600 transition-colors"
+                  className="flex items-center text-gray-700 hover:text-orange-600 transition-colors"
                 >
                   ZebuValley
                   <ChevronDown className="ml-1 h-4 w-4" />
@@ -99,7 +99,7 @@ const Index = () => {
                 )}
               </div>
 
-              <a href="#inovacao" className="text-gray-700 hover:text-blue-600 transition-colors">
+              <a href="#inovacao" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Inovação
               </a>
             </div>
@@ -108,8 +108,16 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section 
+        className="py-20 bg-gradient-to-br from-orange-50 to-white relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.8), rgba(255, 255, 255, 0.8)), url('https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 min-h-[120px] flex items-center justify-center">
             {headlines[currentHeadline]}
           </h1>
@@ -117,10 +125,10 @@ const Index = () => {
             Ecossistema de Inovação de Uberaba
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
               Conheça nossa comunidade
             </Button>
-            <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3">
+            <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-3">
               Participe da Trilha
             </Button>
           </div>
@@ -128,8 +136,17 @@ const Index = () => {
       </section>
 
       {/* Quem Somos */}
-      <section id="quem-somos" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        id="quem-somos" 
+        className="py-20 bg-white relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Quem Somos</h2>
           <div className="prose prose-lg mx-auto text-gray-700 leading-relaxed">
             <p className="mb-6">
@@ -152,14 +169,22 @@ const Index = () => {
       </section>
 
       {/* Oportunidades */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        className="py-20 bg-gray-50 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Oportunidades</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Eventos */}
             <div id="eventos" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-              <Calendar className="h-8 w-8 text-blue-600 mb-4" />
+              <Calendar className="h-8 w-8 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Eventos</h3>
               <p className="text-gray-600 mb-4">
                 Acompanhe nossa agenda de eventos e atividades do ecossistema.
@@ -222,12 +247,12 @@ const Index = () => {
 
             {/* Trilha */}
             <div id="trilha" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-              <ChevronRight className="h-8 w-8 text-blue-600 mb-4" />
+              <ChevronRight className="h-8 w-8 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Trilha da Inovação</h3>
               <p className="text-gray-600 mb-4">
                 Apoio e acompanhamento de projetos de inovação em todas as etapas.
               </p>
-              <Button className="w-full bg-blue-600 hover:bg-blue-700">
+              <Button className="w-full bg-orange-600 hover:bg-orange-700">
                 Saiba mais
               </Button>
             </div>
@@ -236,8 +261,17 @@ const Index = () => {
       </section>
 
       {/* Ambientes de Inovação - Incubadoras */}
-      <section id="pre-incubadoras" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        id="pre-incubadoras" 
+        className="py-20 bg-white relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Pré-incubadoras e Incubadoras</h2>
           <div className="prose prose-lg mx-auto text-gray-700 mb-12">
             <p className="mb-6">
@@ -252,12 +286,12 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="bg-orange-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3">Unitecne</h3>
               <div className="space-y-2 text-gray-700">
                 <p className="flex items-center">
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  <a href="https://unitecne.uniube.br/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                  <a href="https://unitecne.uniube.br/" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
                     unitecne.uniube.br
                   </a>
                 </p>
@@ -272,12 +306,12 @@ const Index = () => {
               </div>
             </div>
             
-            <div className="bg-blue-50 p-6 rounded-lg">
+            <div className="bg-orange-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-3">Impulso</h3>
               <div className="space-y-2 text-gray-700">
                 <p className="flex items-center">
                   <ExternalLink className="h-4 w-4 mr-2" />
-                  <a href="https://www.uftm.edu.br/proppg/pesquisa/nuemp/impulso" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+                  <a href="https://www.uftm.edu.br/proppg/pesquisa/nuemp/impulso" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
                     UFTM - Impulso
                   </a>
                 </p>
@@ -296,8 +330,17 @@ const Index = () => {
       </section>
 
       {/* NITs */}
-      <section id="nits" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section 
+        id="nits" 
+        className="py-20 bg-gray-50 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1466442929976-97f336a657be?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">NITs</h2>
           <div className="prose prose-lg mx-auto text-gray-700 mb-12">
             <p className="mb-6">
@@ -316,7 +359,7 @@ const Index = () => {
                   <Phone className="h-4 w-4 mr-2" />
                   (34) 8719-9352 - Denise
                 </p>
-                <a href="https://uniube.br/academico/empreendedorismo/nucleo-de-inovacao-tecnologica" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-700">
+                <a href="https://uniube.br/academico/empreendedorismo/nucleo-de-inovacao-tecnologica" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Site oficial
                 </a>
@@ -330,7 +373,7 @@ const Index = () => {
                   <Phone className="h-4 w-4 mr-2" />
                   (34) 3331-3024 - Demian
                 </p>
-                <a href="https://www.uftm.edu.br/proppg/pesquisa/nit" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-700">
+                <a href="https://www.uftm.edu.br/proppg/pesquisa/nit" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Site oficial
                 </a>
@@ -352,40 +395,48 @@ const Index = () => {
       </section>
 
       {/* Trilha da Inovação */}
-      <section className="py-20 bg-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section 
+        className="py-20 bg-orange-600 text-white relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(234, 88, 12, 0.8), rgba(234, 88, 12, 0.8)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl font-bold mb-8">Trilha da Inovação</h2>
-          <div className="prose prose-lg mx-auto text-blue-100 mb-12">
+          <div className="prose prose-lg mx-auto text-orange-100 mb-12">
             <p className="mb-6">
               A Trilha da Inovação é uma iniciativa dos Ambientes de Inovação do ZebuValley que visam apoiar e acompanhar de perto todos os projetos de inovação que surgirem no território.
             </p>
             <div className="grid md:grid-cols-3 gap-8 my-12">
               <div className="text-center">
-                <div className="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">1</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Ideação</h3>
-                <p className="text-sm text-blue-100">
+                <p className="text-sm text-orange-100">
                   Momento inicial onde os esforços estão voltados para conhecer melhor a dor a ser resolvida.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">2</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Validação</h3>
-                <p className="text-sm text-blue-100">
+                <p className="text-sm text-orange-100">
                   Quando a startup começa suas vendas e entende como o mercado recebe sua solução.
                 </p>
               </div>
               
               <div className="text-center">
-                <div className="bg-blue-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">3</span>
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Tração/Escala</h3>
-                <p className="text-sm text-blue-100">
+                <p className="text-sm text-orange-100">
                   Solução testada e bem aceita pelo mercado, momento de pensar em escalar o negócio.
                 </p>
               </div>
@@ -397,7 +448,7 @@ const Index = () => {
             <p className="text-gray-600 mb-6">
               Se você tem uma ideia, um projeto ou uma startup e quer ter apoio dos ambientes de inovação, inscreva-se no link abaixo que entraremos em contato.
             </p>
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3">
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
               Inscrever-se na Trilha
             </Button>
           </div>
