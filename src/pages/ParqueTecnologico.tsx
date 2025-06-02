@@ -12,12 +12,11 @@ const ParqueTecnologico = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="text-2xl font-bold text-orange-600">
-              ZebuValley
+              <img src="/images/logo_zebuvalley.png" style={{ width: '100px', height: 'auto' }}/>
             </Link>
             <Link 
               to="/"
-              className="flex items-center text-gray-600 hover:text-orange-600 transition-colors"
-            >
+              className="flex items-center text-gray-600 hover:text-orange-600 transition-colors">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Voltar ao início
             </Link>
@@ -27,9 +26,9 @@ const ParqueTecnologico = () => {
 
       {/* Hero Section */}
       <section 
-        className="py-20 bg-gradient-to-br from-orange-50 to-white relative"
+        className="py-40 bg-gradient-to-br from-orange-50 to-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=4076&q=80')`,
+          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.9), rgba(255, 255, 255, 0.9)), url('/images/parque.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

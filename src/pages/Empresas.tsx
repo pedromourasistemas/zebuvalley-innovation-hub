@@ -8,38 +8,38 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Empresas = () => {
   const empresas = [
-    { nome: "AIRED - Inovação em Geotecnologia", url: "#" },
-    { nome: "Oficina5 Soluções Inteligentes e Consultoria", url: "#" },
-    { nome: "Horus 3D (antiga Astroscience 3D)", url: "#" },
-    { nome: "Granto Corretora de Seguros", url: "https://granto.com.br" },
-    { nome: "Grao Direto", url: "#" },
-    { nome: "Agro ESGP", url: "#" },
-    { nome: "Escola de Limpeza Cursos e Treinamentos", url: "#" },
-    { nome: "TSul - Triangulo Sul Sistemas", url: "#" },
-    { nome: "Nerd Stickers", url: "#" },
-    { nome: "Animalcell Inovação e Pesquisa", url: "#" },
-    { nome: "EasyJur Tecnologia e Sistema", url: "#" },
-    { nome: "Shennong Brasil - China", url: "#" },
-    { nome: "Biota Innovation", url: "#" },
-    { nome: "OnePlay Digital", url: "#" },
-    { nome: "LDC Soluções", url: "#" },
-    { nome: "TagFY", url: "#" },
-    { nome: "Vimac", url: "#" },
-    { nome: "Criativa", url: "#" },
-    { nome: "Vitales", url: "#" },
-    { nome: "Sults", url: "#" },
-    { nome: "BevilaSuporte", url: "#" },
-    { nome: "Allas", url: "#" },
-    { nome: "Triângulo Ventures", url: "https://www.trianguloventures.com.br/" },
-    { nome: "Garcia & Schneider Advocacia", url: "#" },
-    { nome: "Di-Tano Advocacia", url: "#" },
-    { nome: "Empreendedorismo Guru", url: "#" },
-    { nome: "Cecontein", url: "#" },
-    { nome: "Uai Summit", url: "#" },
-    { nome: "Manejo Remoto", url: "#" },
-    { nome: "Metanet", url: "#" },
-    { nome: "BlueFocus", url: "#" },
-    { nome: "D.Moura", url: "#" }
+    { nome: "AIRED - Inovação em Geotecnologia", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Oficina5 Soluções Inteligentes e Consultoria", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Horus 3D (antiga Astroscience 3D)", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Granto Corretora de Seguros", url: "https://granto.com.br", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Grao Direto", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Agro ESGP", url: "#" , logo: "/images/logo_zebuvalley.png"},
+    { nome: "Escola de Limpeza Cursos e Treinamentos", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "TSul - Triangulo Sul Sistemas", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Nerd Stickers", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Animalcell Inovação e Pesquisa", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "EasyJur Tecnologia e Sistema", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Shennong Brasil - China", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Biota Innovation", url: "#", logo: "/images/logo_zebuvalley.png"},
+    { nome: "OnePlay Digital", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "LDC Soluções", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "TagFY", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Vimac", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Criativa", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Vitales", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Sults", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "BevilaSuporte", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Allas", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Triângulo Ventures", url: "https://www.trianguloventures.com.br/", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Garcia & Schneider Advocacia", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Di-Tano Advocacia", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Empreendedorismo Guru", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Cecontein", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Uai Summit", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Manejo Remoto", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "Metanet", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "BlueFocus", url: "#", logo: "/images/logo_zebuvalley.png" },
+    { nome: "D.Moura", url: "#", logo: "/images/logo_zebuvalley.png" }
   ];
 
   // Divide empresas em grupos de 4 para o carrossel
@@ -56,7 +56,7 @@ const Empresas = () => {
     <div 
       className="min-h-screen bg-gray-50 relative"
       style={{
-        backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=2126&q=80')`,
+        backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('/images/empresas.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -92,9 +92,16 @@ const Empresas = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                     {group.map((empresa, idx) => (
                       <div key={idx} className="bg-white rounded-full w-24 h-24 flex items-center justify-center shadow-md hover:shadow-lg transition-shadow mx-auto">
-                        <div className="text-center text-xs font-medium text-gray-600 px-2">
-                          {empresa.nome.split(' ')[0]}
-                        </div>
+                        {/* Imagem da logo */}
+                        {empresa.logo && (
+                          <img
+                            src={empresa.logo}
+                            alt={`Logo da ${empresa.nome}`}
+                            className="h-10 object-contain mb-1"
+                          />
+                        )}
+                        
+                        
                       </div>
                     ))}
                   </div>

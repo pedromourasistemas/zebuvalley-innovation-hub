@@ -12,7 +12,7 @@ const CentroInovacao = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="text-2xl font-bold text-orange-600">
-              ZebuValley
+              <img src="/images/logo_zebuvalley.png" style={{ width: '100px', height: 'auto' }}/>
             </Link>
             <Link 
               to="/"
@@ -27,9 +27,9 @@ const CentroInovacao = () => {
 
       {/* Hero Section */}
       <section 
-        className="py-20 bg-gradient-to-br from-orange-50 to-white relative"
+        className="py-40 bg-gradient-to-br from-orange-50 to-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=3543&q=80')`,
+          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.9), rgba(255, 255, 255, 0.9)), url('/images/inovation2.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'

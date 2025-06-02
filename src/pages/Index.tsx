@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin } from 'lucide-react';
+import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
-const Index = () => {
+const Index = () => { 
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const toggleDropdown = (menu: string) => {
@@ -158,13 +158,10 @@ const Index = () => {
               Esse termo se refere a territórios onde pessoas, instituições, empresas e iniciativas se conectam com o objetivo comum de tornar o local mais atrativo e competitivo por meio da inovação. Isso acontece através de eventos, programas, investimentos, produção de conhecimento, apoio a startups, entre outras ações.
             </p>
             <p className="mb-6">
-              Foi com essa visão que nasceu o <strong>ZebuValley</strong> — uma comunidade formada por pessoas e instituições de Uberaba que acreditam no poder da colaboração para impulsionar a inovação local. Nosso papel é apoiar a orquestração das ações do Ecossistema de Inovação de Uberaba, conectando quem já está inovando com quem quer começar.
+              Foi com essa visão que nasceu o <strong>ZebuValley</strong>, uma comunidade formada por pessoas e instituições de Uberaba que acreditam no poder da colaboração para impulsionar a inovação local. Nosso papel é apoiar a orquestração das ações do Ecossistema de Inovação de Uberaba, conectando quem já está inovando com quem quer começar.
             </p>
             <p className="mb-6">
-              Participam ativamente da comunidade: empresas, entidades públicas e privadas, instituições de ensino, empreendedores e profissionais que acreditam que a inovação pode transformar Uberaba, gerando impacto econômico, social e cultural.
-            </p>
-            <p className="text-center font-semibold text-blue-600">
-              Em resumo: somos uma comunidade viva, colaborativa e apaixonada por inovação, trabalhando para colocar Uberaba no mapa dos grandes ecossistemas de inovação do Brasil.
+              <strong>Participam ativamente da comunidade:</strong> empresas, entidades públicas e privadas, instituições de ensino, empreendedores e profissionais que acreditam que a inovação pode transformar Uberaba, gerando impacto econômico, social e cultural.
             </p>
           </div>
         </div>
@@ -212,7 +209,7 @@ const Index = () => {
               <FileText className="h-8 w-8 text-green-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Editais Abertos</h3>
               <p className="text-gray-600 mb-4">
-                Editais de fomento à inovação com inscrições abertas — regionais, estaduais e nacionais.
+                Aqui você encontra editais de fomento à inovação que estão com inscrições abertas, sejam eles regionais, estaduais ou nacionais. Cada edital vem com seu respectivo link para facilitar o acesso.
               </p>
               <div className="space-y-3">
                 <p className="text-sm text-gray-600">
@@ -235,12 +232,24 @@ const Index = () => {
               <Users className="h-8 w-8 text-purple-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Vagas</h3>
               <p className="text-gray-600">
-                Vagas em atores conectados ao nosso ecossistema de inovação.
+                Aqui você encontra vagas em atores que estão conectados ao nosso ecossistema. 
               </p>
             </div>
 
+            {/* Trilha */}
+            <div id="trilha" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <Rocket className="h-8 w-8 text-orange-600 mb-4" />
+              <h3 className="text-xl font-semibold mb-3">Trilha da Inovação</h3>
+              <p className="text-gray-600 mb-4">
+                Apoio e acompanhamento de projetos de inovação em todas as etapas.
+              </p>
+              <Button className="w-full bg-orange-600 hover:bg-orange-700">
+                Saiba mais
+              </Button>
+            </div>
+
             {/* Programas */}
-            <div id="programas" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 md:col-span-2">
+            <div id="programas" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100 md:col-span-3">
               <Building className="h-8 w-8 text-orange-600 mb-4" />
               <h3 className="text-xl font-semibold mb-3">Programas de Inovação</h3>
               <div className="space-y-4">
@@ -256,17 +265,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Trilha */}
-            <div id="trilha" className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
-              <ChevronRight className="h-8 w-8 text-orange-600 mb-4" />
-              <h3 className="text-xl font-semibold mb-3">Trilha da Inovação</h3>
-              <p className="text-gray-600 mb-4">
-                Apoio e acompanhamento de projetos de inovação em todas as etapas.
-              </p>
-              <Button className="w-full bg-orange-600 hover:bg-orange-700">
-                Saiba mais
-              </Button>
-            </div>
           </div>
         </div>
       </section>
@@ -409,7 +407,7 @@ const Index = () => {
       <section 
         className="py-20 bg-orange-600 text-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(234, 88, 12, 0.8), rgba(234, 88, 12, 0.8)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`,
+          backgroundImage: `linear-gradient(rgba(234, 88, 12, 0.8), rgba(234, 88, 12, 0.8)), url('/images/inovation1.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -515,7 +513,9 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 ZebuValley. Todos os direitos reservados.</p>
+            <p>
+              &copy; Feito no ZebuValley, por Pedro Moura. Todos os direitos reservados 2025 © .
+            </p>
           </div>
         </div>
       </footer>
