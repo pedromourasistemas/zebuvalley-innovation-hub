@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin, Rocket } from 'lucide-react';
+import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin, Rocket, InstagramIcon, LinkedinIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -142,7 +142,7 @@ const Index = () => {
         id="quem-somos" 
         className="py-20 bg-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80')`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/comunidade1.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -171,7 +171,7 @@ const Index = () => {
       <section 
         className="py-20 bg-gray-50 relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `linear-gradient(rgba(249, 250, 251, 0.9), rgba(249, 250, 251, 0.9)), url('/images/innovation3.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -274,7 +274,7 @@ const Index = () => {
         id="pre-incubadoras" 
         className="py-20 bg-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/comunidade3.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
@@ -494,8 +494,7 @@ const Index = () => {
               <div className="space-y-2">
                 <a 
                   href="mailto:falecomzebuvalley@gmail.com" 
-                  className="flex items-center text-gray-400 hover:text-white transition-colors"
-                >
+                  className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Mail className="h-4 w-4 mr-2" />
                   falecomzebuvalley@gmail.com
                 </a>
@@ -503,10 +502,26 @@ const Index = () => {
                   href="https://chat.whatsapp.com/JANLpYsnU47LjXZDu2LEEW" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="flex items-center text-gray-400 hover:text-white transition-colors"
-                >
+                  className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Phone className="h-4 w-4 mr-2" />
                   Grupo WhatsApp
+                </a>
+
+                <a 
+                  href="https://www.instagram.com/zebuvalley/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-400 hover:text-white transition-colors">
+                  <InstagramIcon className="h-4 w-4 mr-2" />
+                  Instagram
+                </a>
+                <a 
+                  href="https://www.linkedin.com/company/zebuvalley/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-gray-400 hover:text-white transition-colors">
+                  <LinkedinIcon className="h-4 w-4 mr-2" />
+                  Linkedin
                 </a>
               </div>
             </div>
