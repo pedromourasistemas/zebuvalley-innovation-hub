@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/zebuvalley-innovation-hub/', // ✅ Caminho base para GitHub Pages
+  base: '/zebuvalley-innovation-hub/',
 
   server: {
     host: "::",
