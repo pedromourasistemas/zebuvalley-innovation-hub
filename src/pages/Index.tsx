@@ -92,7 +92,6 @@ const Index = () => {
                 </button>
                 {activeDropdown === 'zebuvalley' && (
                   <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50">
-                    <Link to="/empresas" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Empresas</Link>
                     <Link to="/academia" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Academia</Link>
                     <Link to="/sociedade-organizada" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Sociedade Organizada</Link>
                     <Link to="/governo" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">Governo</Link>
@@ -195,7 +194,7 @@ const Index = () => {
                 <div className="w-full h-96 border border-gray-200 rounded-lg overflow-hidden">
                     <iframe
                       src="https://calendar.google.com/calendar/embed?src=falecomzebuvalley%40gmail.com&ctz=America%2FSao_Paulo"
-                      style={{ border: 0, width: '100%', height: '600px' }}
+                      style={{ border: 0, width: '100%', height: '100%' }}
                       frameBorder="0"
                       scrolling="no"
                       title="Agenda ZebuValley"
@@ -281,13 +280,13 @@ const Index = () => {
         }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Pré-incubadoras e Incubadoras</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Incubadoras e Pré-Incubação</h2>
           <div className="prose prose-lg mx-auto text-gray-700 mb-12">
             <p className="mb-6">
-              As pré-incubadoras e incubadoras são ambientes de apoio à inovação que ajudam ideias e negócios a ganharem forma, estrutura e força para crescer.
+              As incubadoras são ambientes de apoio à inovação que ajudam ideias e negócios a ganharem forma, estrutura e força para crescer.
             </p>
             <p className="mb-6">
-              A <strong>pré-incubadora</strong> é indicada para quem está nas etapas iniciais de desenvolvimento de uma ideia inovadora. Ela oferece suporte para validar o problema, a solução e o modelo de negócio, além de mentorias, conexões e capacitações.
+              A <strong>pré-incubação</strong> é indicada para quem está nas etapas iniciais de desenvolvimento de uma ideia inovadora. Ela oferece suporte para validar o problema, a solução e o modelo de negócio, além de mentorias, conexões e capacitações.
             </p>
             <p className="mb-8">
               Já a <strong>incubadora</strong> apoia empreendedores que já têm um negócio em estágio inicial, com algum nível de validação ou operação. Nela, as startups recebem apoio técnico, gerencial e estratégico para crescer de forma estruturada.
@@ -499,7 +498,7 @@ const Index = () => {
                   falecomzebuvalley@gmail.com
                 </a>
                 <a 
-                  href="https://chat.whatsapp.com/JANLpYsnU47LjXZDu2LEEW" 
+                  href="https://chat.whatsapp.com/KCXEU70AV4YALHhl3a5vXf?mode=ems_wa_t" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-white transition-colors">

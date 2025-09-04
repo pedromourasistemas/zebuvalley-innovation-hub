@@ -1,19 +1,22 @@
+// vite.config.ts
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: '/zebuvalley-innovation-hub/',
+  // 👇 se o site for servido em /zebuvalley-innovation-hub/
+  // (por exemplo no GitHub Pages ou subpasta de servidor)
+  base: mode === "production" ? "/zebuvalley-innovation-hub/" : "/",
 
   server: {
-    host: "::",
+    host: "::", // deixa acessível na rede local
     port: 8080,
   },
 
   plugins: [
     react(),
-    mode === 'development' && componentTagger(),
+    mode === "development" && componentTagger(),
   ].filter(Boolean),
 
   resolve: {

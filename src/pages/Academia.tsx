@@ -18,7 +18,7 @@ const Academia = () => {
     {
       nome: "UniFacthus",
       descricao: "Instituição de ensino superior",
-      url: "#"
+      url: "https://facthus.edu.br/"
     },
     {
       nome: "Fazu - Faculdades Associadas de Uberaba",
@@ -33,7 +33,7 @@ const Academia = () => {
     {
       nome: "U. do Agro - Universidade do Agro",
       descricao: "Universidade especializada em agronegócio",
-      url: "#"
+      url: "https://universidadedoagro.com.br/"
     }
   ];
 
