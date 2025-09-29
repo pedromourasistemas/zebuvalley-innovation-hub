@@ -413,48 +413,60 @@ const Index = () => {
         }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl font-bold mb-8">Trilha da Inovação</h2>
-          <div className="prose prose-lg mx-auto text-orange-100 mb-12">
+          <h2 className="text-3xl font-bold mb-8">Trilha da Inovação ZebuValley</h2>
+          <div className="prose prose-lg mx-auto text-left text-orange-100 mb-12">
             <p className="mb-6">
-              A Trilha da Inovação é uma iniciativa dos Ambientes de Inovação do ZebuValley que visam apoiar e acompanhar de perto todos os projetos de inovação que surgirem no território.
+                A Trilha da Inovação é a estrutura que organiza e conecta os atores do Ecossistema de Inovação de Uberaba. Ela funciona como um verdadeiro caminho de apoio para empreendedores e inovadores que desejam transformar ideias em negócios de impacto no nosso território.
+            </p>
+            <p>
+                Nessa jornada, cada etapa da trilha conta com instituições, programas e iniciativas que seguram na mão do empreendedor, oferecendo suporte desde os primeiros passos até o momento em que uma startup conquista tração e escala.
+            </p>
+            <br/>
+            <p>
+                O que antecede o ponto de partida da trilha reúne os atores promotores de inovação: universidades, ambientes de inovação, empresas, sociedade civil organizada, entidades de classe e diversos outros agentes.
+            </p>
+            <br/>
+            <p>
+                São eles que alimentam a cultura empreendedora em Uberaba por meio de palestras, meetups, cursos, workshops e eventos, despertando talentos e inspirando novas ideias.
             </p>
             <div className="grid md:grid-cols-3 gap-8 my-12">
               <div className="text-center">
                 <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">1</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Ideação</h3>
-                <p className="text-sm text-orange-100">
-                  Momento inicial onde os esforços estão voltados para conhecer melhor a dor a ser resolvida.
-                </p>
+                <h3 className="text-lg font-semibold mb-2">Idea Mentoria</h3>
               </div>
               
               <div className="text-center">
                 <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">2</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Validação</h3>
-                <p className="text-sm text-orange-100">
-                  Quando a startup começa suas vendas e entende como o mercado recebe sua solução.
-                </p>
+                <h3 className="text-lg font-semibold mb-2">MVP Mentoria</h3>
               </div>
               
               <div className="text-center">
                 <div className="bg-orange-500 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold">3</span>
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Tração/Escala</h3>
-                <p className="text-sm text-orange-100">
-                  Solução testada e bem aceita pelo mercado, momento de pensar em escalar o negócio.
-                </p>
+                <h3 className="text-lg font-semibold mb-2">Rocket Mentoria</h3>
               </div>
             </div>
           </div>
           
           <div className="bg-white text-gray-900 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Tem uma ideia, projeto ou startup?</h3>
-            <p className="text-gray-600 mb-6">
-              Se você tem uma ideia, um projeto ou uma startup e quer ter apoio dos ambientes de inovação, inscreva-se no link abaixo que entraremos em contato.
+            <h3 className="text-xl font-semibold mb-4">As Startups que fazem parte da trilha são reconhecidas como startups do ZebuValley.</h3>
+            <h3 className="text-lg font-semibold mb-2">Programas que apoiam a Trilha</h3>
+            <p className="text-gray-600 text-left mb-6">
+              Para tornar a jornada empreendedora mais consistente e estruturada, o ZebuValley conta com programas interinstitucionais estratégicos, que se conectam diretamente à Trilha da Inovação:
+            </p>
+            <p className="text-gray-600 text-justify mb-6">
+              <b>Desperta!</b> - Programa voltado para quem deseja despertar seu espírito empreendedor. Nele, os participantes aprendem a explorar seu perfil, identificar oportunidades e estruturar ideias iniciais que podem se transformar em startups de sucesso.
+            </p>
+            <p className="text-gray-600 text-justify mb-6">
+              <b>ZebuValley Startups</b> - Programa direcionado a empreendedores que já possuem uma ideia de negócio e querem validá-la no mercado. Ele reúne diferentes instituições e mentores do ecossistema ZebuValley para apoiar o desenvolvimento, a validação e os primeiros passos de cada projeto.
+            </p>
+            <p className="text-gray-600 text-justify mb-6">
+            Assim, a <b>Trilha da Inovação do ZebuValley</b> não é apenas um modelo: é um caminho vivo, construído coletivamente, que garante que ninguém precise empreender sozinho.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
               Inscrever-se na Trilha
