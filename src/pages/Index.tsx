@@ -31,11 +31,15 @@ const Index = () => {
       <nav className="sticky top-0 bg-white border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-orange-600">
-                <img src="/images/logo_zebuvalley.png" style={{ width: '100px', height: 'auto' }}/>
-              </span>
-            </div>
+          <div className="flex items-center">
+            <Link to="/" aria-label="Ir para a home" className="cursor-pointer">
+              <img
+                src="/images/logo_zebuvalley.png"
+                style={{ width: '100px', height: 'auto' }}
+                alt="ZebuValley"
+              />
+            </Link>
+          </div>
             
             <div className="hidden md:flex items-center space-x-8">
               <a href="#quem-somos" className="text-gray-700 hover:text-orange-600 transition-colors">
@@ -112,7 +116,7 @@ const Index = () => {
       <section 
         className="py-20 bg-gradient-to-br from-orange-50 to-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.8), rgba(255, 255, 255, 0.8)), url('/images/startup.jpg')`,
+          backgroundImage: `linear-gradient(rgba(255, 237, 213, 0.8), rgba(255, 255, 255, 0.8)), url('/images/zebuvalley_2025.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
