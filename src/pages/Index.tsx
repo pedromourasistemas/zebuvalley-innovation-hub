@@ -127,10 +127,18 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
-              Conheça nossa comunidade
+              <a 
+                  href="https://www.instagram.com/zebuvalley/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center text-white-400 hover:text-white transition-colors">
+                  Conheça nossa comunidade
+                </a>
             </Button>
             <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50 px-8 py-3">
-              Participe da Trilha
+              <a href="https://chat.whatsapp.com/Gx7UloERfHr9Hq0SAlbJY2" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
+                Participe da Trilha
+              </a>
             </Button>
           </div>
         </div>
@@ -242,8 +250,10 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Apoio e acompanhamento de projetos de inovação em todas as etapas.
               </p>
-              <Button className="w-full bg-orange-600 hover:bg-orange-700">
+              <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
+                <a href="https://chat.whatsapp.com/Gx7UloERfHr9Hq0SAlbJY2" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
                 Saiba mais
+                </a>
               </Button>
             </div>
 
@@ -469,7 +479,27 @@ const Index = () => {
             Assim, a <b>Trilha da Inovação do ZebuValley</b> não é apenas um modelo: é um caminho vivo, construído coletivamente, que garante que ninguém precise empreender sozinho.
             </p>
             <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
-              Inscrever-se na Trilha
+              <a href="https://chat.whatsapp.com/Gx7UloERfHr9Hq0SAlbJY2" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
+              Participar do Desperta! 
+              </a>
+            </Button>
+            <br/><br/>
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
+              <a href="https://chat.whatsapp.com/Gx7UloERfHr9Hq0SAlbJY2" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
+              ZebuValley Startups 
+              </a>
+            </Button>
+            <br/><br/>
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
+              <a href="https://chat.whatsapp.com/Gx7UloERfHr9Hq0SAlbJY2" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
+              Fazer parte da trilha 
+              </a>
+            </Button>
+            <br/><br/>
+            <Button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-3">
+              <a href="https://chat.whatsapp.com/KCXEU70AV4YALHhl3a5vXf" target="_blank" rel="noopener noreferrer" className="hover:text-orange-600">
+              Grupo do ZebuValley 
+              </a>
             </Button>
           </div>
         </div>
