@@ -437,9 +437,9 @@ const Index = () => {
               <div className="space-y-2 text-sm text-gray-700">
                 <p className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
-                  (34) 8719-9352 - Denise
+                  (34) 3319 6665
                 </p>
-                <a href="https://uniube.br/academico/empreendedorismo/nucleo-de-inovacao-tecnologica" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
+                <a href="https://nit.uniube.br/" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Site oficial
                 </a>
@@ -447,13 +447,13 @@ const Index = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-3">NUPIT UFTM</h3>
+              <h3 className="text-lg font-semibold mb-3">NUPITT UFTM</h3>
               <div className="space-y-2 text-sm text-gray-700">
                 <p className="flex items-center">
                   <Phone className="h-4 w-4 mr-2" />
                   (34) 3331-3024 - Demian
                 </p>
-                <a href="https://www.uftm.edu.br/proppg/pesquisa/nit" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
+                <a href="https://ai.staging.uftm.edu.br/" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-700">
                   <ExternalLink className="h-4 w-4 mr-2" />
                   Site oficial
                 </a>
