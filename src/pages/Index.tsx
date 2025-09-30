@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin, Rocket, InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { ChevronDown, Calendar, FileText, Users, Building, ChevronRight, ExternalLink, Phone, Mail, MapPin, Rocket, InstagramIcon, LinkedinIcon, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Link } from 'react-router-dom';
 
 const Index = () => { 
@@ -107,6 +108,55 @@ const Index = () => {
               <Link to="/inovacao" className="text-gray-700 hover:text-orange-600 transition-colors">
                 Inovação
               </Link>
+            </div>
+
+            {/* Mobile menu */}
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline" size="icon" aria-label="Abrir menu">
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-72">
+                  <nav className="mt-8 space-y-1">
+                    <a href="#quem-somos" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">
+                      Quem somos
+                    </a>
+                    <div className="px-2 pt-4 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                      Oportunidades
+                    </div>
+                    <a href="#eventos" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Eventos</a>
+                    <a href="#editais" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Editais Abertos</a>
+                    <a href="#vagas" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Vagas</a>
+                    <a href="#programas" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Programas de Inovação</a>
+                    <a href="#trilha" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Trilha da Inovação</a>
+
+                    <div className="px-2 pt-6 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                      Ambientes de Inovação
+                    </div>
+                    <Link to="/pre-incubadoras" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Pré-incubadoras e Incubadoras</Link>
+                    <Link to="/nits" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">NITs</Link>
+                    <Link to="/parque-labs" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Parque Labs</Link>
+                    <Link to="/centro-inovacao" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Centro de Inovação</Link>
+                    <Link to="/parque-tecnologico" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Parque Tecnológico</Link>
+                    <Link to="/venture-builder" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Corporate Venture Builder</Link>
+                    <Link to="/embrapii" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Embrapii</Link>
+
+                    <div className="px-2 pt-6 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                      ZebuValley
+                    </div>
+                    <Link to="/academia" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Academia</Link>
+                    <Link to="/sociedade-organizada" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Sociedade Organizada</Link>
+                    <Link to="/governo" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Governo</Link>
+                    <Link to="/mecanismos-inovacao" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Mecanismos de Inovação</Link>
+
+                    <div className="px-2 pt-6">
+                      <Link to="/inovacao" className="block px-2 py-3 text-gray-800 hover:bg-gray-50 rounded">Inovação</Link>
+                    </div>
+                  </nav>
+                </SheetContent>
+              </Sheet>
             </div>
           </div>
         </div>
