@@ -211,7 +211,7 @@ const Index = () => {
         id="quem-somos" 
         className="py-20 bg-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/startup.jpg')`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/zebuvalley6.jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: isIOS ? 'scroll' : 'fixed'
@@ -345,7 +345,7 @@ const Index = () => {
         id="pre-incubadoras" 
         className="py-20 bg-white relative"
         style={{
-          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/comunidade3.jpg')`,
+          backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/images/zebuvalley5.jpeg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed'
